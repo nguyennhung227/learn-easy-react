@@ -11,7 +11,7 @@ function App() {
   }
 
   function handleStudentClick(student: Student) {
-    alert('student click:' + student.name)
+    alert('Welcome ' + student.name)
   }
 
   return (
