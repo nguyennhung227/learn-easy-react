@@ -11,7 +11,7 @@ function App() {
   }
 
   function handleStudentClick(student: Student) {
-    console.log('student click:', student.name)
+    alert('student click:' + student.name)
   }
 
   return (
