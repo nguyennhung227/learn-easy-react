@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './App.css'
 import { StudentCard } from './features/labs/StudentCard'
 import { Student } from './models'
