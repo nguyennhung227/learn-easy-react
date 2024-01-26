@@ -11,9 +11,13 @@ function App() {
     hobbyList: ['shopping', 'travelling'],
   }
 
+  function handleStudentClick(student: Student) {
+    console.log('student click:', student.name)
+  }
+
   return (
     <div>
-      <StudentCard student={customer}></StudentCard>
+      <StudentCard student={customer} onClick={handleStudentClick}></StudentCard>
     </div>
   )
 }
