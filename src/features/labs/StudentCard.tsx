@@ -12,7 +12,11 @@ export function StudentCard({ student, onClick }: StudentCardProps) {
       <p>Student Age: {student.age}</p>
       <p>Student is Hero: {student.isHero ? 'hero' : 'no-hero'}</p>
       <p>Student Hobby List: </p>
-      {student.hobbyList}
+      <ul>
+        {student.hobbyList.map((hobby, idx) => (
+          <li key={idx}>{hobby}</li>
+        ))}
+      </ul>
       <br />
       <button onClick={() => onClick?.(student)}>Click here</button>
     </div>
