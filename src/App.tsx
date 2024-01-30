@@ -1,7 +1,11 @@
 import './App.css'
 import { MainLayout } from './components/Layout'
 import { Widget } from './components/common'
+import { FilterableList } from './features/labs/FilterableList'
+import { FixDisappearingInput } from './features/labs/FixDisappearingInput'
+import { LiftingStateUp } from './features/labs/LiftingStateUp'
 import { StudentCard } from './features/labs/StudentCard'
+import { SwapTwoForm } from './features/labs/SwapTwoForm'
 import { Student } from './models'
 
 function App() {
@@ -42,6 +46,21 @@ function App() {
             </Widget>
           </div>
         </div>
+        <br />
+        <h2 className="font-bold text-xl m-5">Synced inputs demo</h2>
+        <LiftingStateUp />
+        <br />
+        <hr />
+        <h2 className="font-bold text-xl p-5">Filtering a list demo</h2>
+        <FilterableList />
+        <br />
+        <hr />
+        <h2 className="font-bold text-xl my-5">Fix disappearing input text</h2>
+        <FixDisappearingInput />
+        <br />
+        <hr />
+        <h2 className="font-bold text-xl my-5">Swap two form fields</h2>
+        <SwapTwoForm />
       </MainLayout>
     </div>
   )

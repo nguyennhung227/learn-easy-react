@@ -1,3 +1,6 @@
 export * from './Header'
 export * from './Footer'
 export * from './Widget'
+export * from './Input'
+export * from './Checkbox'
+export * from './data'
