@@ -2,6 +2,7 @@ import './App.css'
 import { MainLayout } from './components/Layout'
 import { Widget } from './components/common'
 import { FilterableList } from './features/labs/FilterableList'
+import { FixBrokenChat } from './features/labs/FixBrokenChat'
 import { FixDisappearingInput } from './features/labs/FixDisappearingInput'
 import { LiftingStateUp } from './features/labs/LiftingStateUp'
 import { ResetDetailForm } from './features/labs/ResetDetailForm'
@@ -66,6 +67,10 @@ function App() {
         <hr />
         <h2 className="font-bold text-xl my-5"> Reset a detail form</h2>
         <ResetDetailForm />
+        <br />
+        <hr />
+        <h2 className="font-bold text-xl my-5"> Fix a broken chat input</h2>
+        <FixBrokenChat />
       </MainLayout>
     </div>
   )
