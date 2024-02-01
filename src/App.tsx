@@ -4,6 +4,7 @@ import { Widget } from './components/common'
 import { FilterableList } from './features/labs/FilterableList'
 import { FixDisappearingInput } from './features/labs/FixDisappearingInput'
 import { LiftingStateUp } from './features/labs/LiftingStateUp'
+import { ResetDetailForm } from './features/labs/ResetDetailForm'
 import { StudentCard } from './features/labs/StudentCard'
 import { SwapTwoForm } from './features/labs/SwapTwoForm'
 import { Student } from './models'
@@ -61,6 +62,10 @@ function App() {
         <hr />
         <h2 className="font-bold text-xl my-5">Swap two form fields</h2>
         <SwapTwoForm />
+        <br />
+        <hr />
+        <h2 className="font-bold text-xl my-5"> Reset a detail form</h2>
+        <ResetDetailForm />
       </MainLayout>
     </div>
   )
